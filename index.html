@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Google Font CDN  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <!-- DaisyUi CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fontawesome cdn -->
+    <script src="https://kit.fontawesome.com/c50522061b.js" crossorigin="anonymous"></script>
+    <!-- tailewind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- customizing tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'button-primary': '#179800',
+                    },
+                    fontFamily: {
+                        'Sora': ['Sora', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body class="font-Sora">
+    <!-- Header Section -->
+    <div class="bg-gradient-to-b from-[#FFFFFF] to-[#f3e8d3] mb-20">
+        <header class="md:container md:mx-auto">
+            <!-- Navbar -->
+            <div class="navbar bg-base-100 border-b-[1px] border-[#179800] md:border-none lg:border-none mb-20">
+                <div class="navbar-start">
+
+                    <a class="cursor-pointer text-xl"><img src="assets/logo-header.png" alt=""></a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Product</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="hidden sm:flex navbar-end space-x-5">
+                    <i class="cursor-pointer fa-solid fa-magnifying-glass"></i>
+                    <i class="cursor-pointer fa-solid fa-cart-shopping"></i>
+                    <a class="btn border-[#179800] bg-white">Login</a>
+                    <a class="btn bg-button-primary text-white hover:bg-[#292a86]">Register</a>
+                </div>
+
+                <!-- dropdown -->
+                <div class="dropdown md:hidden lg:hidden absolute right-0">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <i class="fa-solid fa-bars text-[#179800]"></i>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- hero section -->
+            <div>
+                <!-- text section -->
+                <div class="text-center w-9/12 mx-auto">
+                    <h1 class="font-semibold text-3xl lg:text-6xl">Freshness<span> You Can Count</span> On, Prices
+                        You’ll Love!</h1>
+                    <br>
+                    <p class="mb-10 text-base lg:text-xl">Shop your daily essentials at unbeatable prices. From fresh
+                        produce to pantry staples, we’ve got
+                        you covered every day!</p>
+                </div>
+                <div class="flex justify-center">
+                    <img src="assets/hero-vegetables.png" alt="">
+                </div>
+                <!-- image section -->
+            </div>
+
+        </header>
+    </div>
+
+    <!-- Main Section -->
+
+    <main class="mx-1 md:container md:mx-auto mb-20">
+        <!-- Servicies Section -->
+        <h2 class="text-2xl lg:text-4xl mb-8 font-semibold text-[#179800]">Services</h2>
+        <!-- cards section -->
+        <div class="flex flex-col lg:flex-row gap-4 items-center justify-center">
+            <!-- Card1 -->
+            <div class="card bg-[#EFEBE3] ">
+                <figure class="px-10 pt-10">
+                    <img src="assets/service.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title">24/7 Services</h2>
+                    <p>Fresh vegetables delivered to your doorstep, 24/7. Enjoy healthy eating anytime with our reliable
+                        service!</p>
+                </div>
+            </div>
+
+            <!-- Card2 -->
+            <div class="card bg-[#EFEBE3] ">
+                <figure class="px-10 pt-10">
+                    <img src="assets/delivery.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title">Fast Delivery</h2>
+                    <p>"Get your fresh vegetables fast with our efficient delivery service! We're committed!.</p>
+                </div>
+            </div>
+
+
+            <!-- Card3 -->
+            <div class="card bg-[#EFEBE3] ">
+                <figure class="px-10 pt-10">
+                    <img src="assets/healthy.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title">Healthy Products </h2>
+                    <p>Experience the goodness of nature with our Healthy Products section! We offer a wide range of Veges!.</p>
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+
+    <!-- Popular Products Section -->
+     <div class="bg-[#f3e8d3] pt-20 pb-20 mb-20">
+        <div class="mx-1 md:container md:mx-auto">
+            <h2 class="text-2xl lg:text-4xl mb-8 font-semibold text-[#179800]">Popular Products</h2>
+            <!--container div in which there will be 2 major div-->
+            <div class="flex flex-col lg:flex-row gap-4"> 
+                <!-- major div only one 1 -->
+                 <div class="bg-gradient-to-br from-[#179800] to-[#FFFFFF] rounded-md">
+                    <!-- text div -->
+                    <div class="text-white mt-10 ml-10 mr-10"> 
+                        <h2>30% off</h2>
+                        <br>
+                        <p class="text-[#111111] text-sm">Discover a world of picked treats, toys and all the essentials</p>
+                        <br>
+                        <button class="btn">Buy Now</button>
+                    </div>
+                    <!-- image div -->
+                     <div class="flex justify-end items-end">
+                        <img src="assets/vegetable-offer.png" alt="" class="">
+                     </div>
+
+                 </div>
+                 <!-- major div number 2 in which there will be all other divs -->
+                  <div class="grid grid-rows-4 grid-cols-2 gap-4 lg:grid-rows-3 lg:grid-cols-3 ">
+                    <!-- 1st div -->
+                    <div></div> 
+                  </div>
+            </div>
+
+        </div>
+     </div>
+        
+    <!-- Footer Section -->
+    <footer></footer>
+</body>
+
+</html>
